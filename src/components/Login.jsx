@@ -14,7 +14,7 @@ const Login = () => {
     <div>
       <Header />
       <div className='absolute '>
-        <img className='w-[100vw] h-[100vh] object-cover' src="https://assets.nflxext.com/ffe/siteui/vlv3/04ef06cc-5f81-4a8e-8db0-6430ba4af286/web/IN-en-20250224-TRIFECTA-perspective_3a9c67b5-1d1d-49be-8499-d179f6389935_large.jpg" alt="" />
+        <img className='w-[100vw] h-[100vh] object-cover brightness-50' src="https://assets.nflxext.com/ffe/siteui/vlv3/04ef06cc-5f81-4a8e-8db0-6430ba4af286/web/IN-en-20250224-TRIFECTA-perspective_3a9c67b5-1d1d-49be-8499-d179f6389935_large.jpg" alt="" />
       </div>
       <form action="" className='absolute w-[90%] sm:w-[50%] md:w-5/12 lg:w-4/12 p-8 bg-black my-36 mx-auto left-0 right-0 text-white bg-opacity-80 rounded-lg'>
         <h1 className='font-bold text-3xl py-4 '>{isSignInForm ? "Sign In" : "Sign Up"}</h1>
