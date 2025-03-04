@@ -1,3 +1,12 @@
+# commands to deploy project on firebase
+1. install firebase CLI - npm install -g firebase-tools
+2. firebase login - firebase login
+3. initialize the firebase - firebase init then select hoisting
+4. deploy command - firebase deploy
+
+
+
+
 # Features
 Flow of Features
 
@@ -15,3 +24,12 @@ Flow of Features
         - movie lists
 
 - NetflixGPT
+
+
+
+
+
+
+
+
+# Sign uping users on firebase

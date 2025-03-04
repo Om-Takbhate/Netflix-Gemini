@@ -4,7 +4,6 @@ import Browse from './Browse'
 
 import { createBrowserRouter } from 'react-router-dom'
 import { RouterProvider } from 'react-router-dom'
-import Header from './Header'
 
 const appRouter = createBrowserRouter([
   {
@@ -16,6 +15,7 @@ const appRouter = createBrowserRouter([
     element: <Browse />
   }
 ])
+
 
 
 const Body = () => {
