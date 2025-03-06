@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
 import { addTrailerVideo } from "../store/slices/moviesSlice"
 import { useEffect } from "react"
 import { API_OPTIONS } from "../constants"
@@ -10,7 +10,7 @@ const useMovieTrailer = (id) => {
         let res = await fetch('https://api.themoviedb.org/3/movie/' + id + '/videos?language=en-US', API_OPTIONS)
         const data = await res.json()
 
-        let trailer = data.results.filter(video => video.type == 'Trailer')[0]
+        let trailer = data.results.filter(video => video.type === 'Trailer')[0]
         trailer = trailer ? trailer : data.results[0]
         dispatch(addTrailerVideo(trailer))
     }
