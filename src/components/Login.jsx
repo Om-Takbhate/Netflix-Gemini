@@ -100,7 +100,7 @@ const Login = () => {
   return (
     <div>
       <Header />
-      <div className='absolute '>
+      <div className='fixed '>
         <img className='w-[100vw] h-[100vh] object-cover brightness-50' src={NETFLIX_BG} alt="" />
       </div>
       <form action="" className='absolute w-[90%] sm:w-[50%] md:w-5/12 lg:w-4/12 p-8 bg-black my-36 mx-auto left-0 right-0 text-white bg-opacity-70 rounded-lg'>

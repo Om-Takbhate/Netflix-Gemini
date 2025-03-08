@@ -45,7 +45,9 @@ const Header = () => {
       }
     });
 
-    return () => unsubscribe()
+    return () => {
+      unsubscribe();
+    }
   }, [])
 
   const showGpt = useSelector(store => store.gpt.showGptSearch)
@@ -59,7 +61,7 @@ const Header = () => {
   }
 
   return (
-    <div className='absolute px-8 py-2 bg-gradient-to-b from-black z-10 w-full flex justify-between items-center min-w-screen'>
+    <div className='absolute px-8 py-2 bg-gradient-to-b from-black z-10 w-full flex justify-between items-center'>
       <div>
         <img className='sm:w-32 w-44' src={NETFLIX_LOGO} alt="" />
       </div>
@@ -67,7 +69,7 @@ const Header = () => {
       {user ? (
         <div className='flex items-center p-2 gap-2 '>
           {showGpt ?
-            <select name="" id="" className='bg-black text-white px-2 py-1' onChange={handleLangugaeChange}>
+            <select name="" id="" className='bg-black hidden sm:inline text-white px-2 py-1' onChange={handleLangugaeChange}>
               <option value="en">English</option>
               <option value="hindi">Hindi</option>
               <option value="spanish">Spanish</option>
@@ -75,7 +77,7 @@ const Header = () => {
           }
           <button className='text-black py-1 px-2 rounded mx-3 bg-white' onClick={handleGptSearchClick}>{showGpt ? 'Home' : 'GPT Search'}</button>
           <img className='w-10 h-10 rounded-md' src={user?.photoURL || "https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg"} alt="user icon" />
-          <button onClick={handleSignout} className='text-white font-bold'>Sign Out</button>
+          <button onClick={handleSignout} className='text-white font-bold sm:inline hidden'>Sign Out</button>
         </div>
       ) : ""}
     </div>
