@@ -61,15 +61,15 @@ const Header = () => {
   }
 
   return (
-    <div className='absolute px-8 py-2 bg-gradient-to-b from-black z-10 w-full flex justify-between items-center'>
+    <div className='absolute px-8 py-2 bg-gradient-to-b from-black z-10 w-full flex justify-center items-center flex-col md:flex-row md:justify-between'>
       <div>
-        <img className='sm:w-32 w-44' src={NETFLIX_LOGO} alt="" />
+        <img className='w-32 ' src={NETFLIX_LOGO} alt="" />
       </div>
 
       {user ? (
         <div className='flex items-center p-2 gap-2 '>
           {showGpt ?
-            <select name="" id="" className='bg-black hidden sm:inline text-white px-2 py-1' onChange={handleLangugaeChange}>
+            <select name="" id="" className='bg-black text-white px-2 py-1' onChange={handleLangugaeChange}>
               <option value="en">English</option>
               <option value="hindi">Hindi</option>
               <option value="spanish">Spanish</option>
