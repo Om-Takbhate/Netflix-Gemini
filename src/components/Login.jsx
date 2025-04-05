@@ -34,7 +34,6 @@ const Login = () => {
     const message = checkValidData(email, password)
     setErrorMessage(message)
 
-
     if (message) {
       //data is not valid
       return
